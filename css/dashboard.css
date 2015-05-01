@@ -109,3 +109,22 @@ body {
   display: inline-block;
   border-radius: 50%;
 }
+
+
+.page-wrapper {
+    padding: 0 15px;
+    padding-right: 40px;
+    min-height: 568px;
+    background-color: #367DA2;
+}
+
+@media(min-width:768px) {
+    #page-wrapper {
+        position: inherit;
+        margin: 0 0 0 250px;
+        padding: 0 30px;
+        border-left: 1px solid #e7e7e7;
+    }
+}
+
+

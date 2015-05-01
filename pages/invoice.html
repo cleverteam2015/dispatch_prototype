@@ -39,9 +39,9 @@
             <li><a href="./board.html">Board</a></li>
             <li><a href="./po.html">Purchase Order</a></li>
             <li><a href="./payment.html">Payment</a></li>
-            <li><a href="./invoice.html">Invoice</a></li>
+            <li class="active"><a href="./invoice.html">Invoice</a></li>
             <li><a href="./report.html">Report</a></li>
-            <li class="active"><a href="./settings.html">Settings</a></li>
+            <li><a href="./settings.html">Settings</a></li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
             <li><a rel="nofollow" data-method="delete" href="./logout.html">Log out</a></li>            
@@ -50,12 +50,228 @@
       </div>
     </div>
 
-    
-    
-    <br> 
-    <div class="page-header" id="header">
-      <h2>Invoice!</h2>
+    <div id="page-wrapper" class="container-fluid" >
+
+      <div class="row">
+        <br><br><br>
+
+        <div class="col-lg-3">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <i class="fa fa-building-o"></i> <strong> Invoice #33456001 </strong>
+                </div>
+                <!-- /.panel-heading -->
+                <div class="panel-body">
+                    <div class="list-group">
+                        <a href="#" class="list-group-item">
+                            <i class="fa fa-comment fa-fw"></i> Job
+                            <span class="pull-right text-muted small"><em>33456001</em>
+                            </span>
+                        </a>
+                        <a href="#" class="list-group-item">
+                            <i class="fa fa-twitter fa-fw"></i> Completed On
+                            <span class="pull-right text-muted small"><em>2/20/2025 8:30 PM</em>
+                            </span>
+                        </a>
+                        <a href="#" class="list-group-item">
+                            <i class="fa fa-envelope fa-fw"></i> Job Type
+                            <span class="pull-right text-muted small"><em>Homeowner</em>
+                            </span>
+                        </a>
+                        <a href="#" class="list-group-item">
+                            <i class="fa fa-tasks fa-fw"></i> Business Unit
+                            <span class="pull-right text-muted small"><em>OC</em>
+                            </span>
+                        </a>
+                        <a href="#" class="list-group-item">
+                            <i class="fa fa-upload fa-fw"></i> Status
+                            <span class="pull-right text-muted small"><em>Pending</em>
+                            </span>
+                        </a>
+                        <a href="#" class="list-group-item">
+                            <i class="fa fa-bolt fa-fw"></i> Invoice Date
+                            <span class="pull-right text-muted small"><em>None</em>
+                            </span>
+                        </a>
+                        <a href="#" class="list-group-item">
+                            <i class="fa fa-warning fa-fw"></i> Process Status
+                            <span class="pull-right text-muted small"><em>Pending</em>
+                            </span>
+                        </a>
+                    </div>
+                    <!-- /.list-group -->
+                </div>
+                <!-- /.panel-body -->
+            </div>
+        </div>
+        <div class="col-lg-9">
+
+            <div class="invoice-header">
+              <h5>
+                <a href="#">
+                  <i class="fa fa-building-o"></i> <strong> Invoice Details </strong>
+                </a>
+              </h5>
+                
+              <dl class="dl-horizontal">
+                <dt><strong>Job Summary: </strong> </dt>
+                <dd>Test Job Only </dd>
+                <dt><strong>Bill To: </strong></dt>
+                <dd>
+                    Homeowner Ass.
+                    123 North Main Street
+                    New York, 213359  
+                </dd>
+                <dt><strong>Service Location: </strong></dt>
+                <dd>
+                    Fix Service Ass.
+                    123 North Main Street
+                    New York, 213359  
+                </dd>
+                <dt><strong>Invoice Summary: </strong></dt>
+                <dd>None</dd>
+                <dt><strong>Subtotal: </strong></dt>
+                <dd>$275.00</dd>
+                <dt><strong>Tax: </strong></dt>
+                <dd>$0.00</dd>
+                <dt><strong>Balance: </strong></dt>
+                <dd>$0.00</dd>
+                <dt><strong>Total: </strong></dt>
+                <dd>$275.00</dd>
+              </dl>
+            </div>
+            
+            <div>
+              <h5>
+                <a href="#">
+                  <i class="fa fa-usd"></i><strong> Payment</strong>
+                </a>
+              </h5>
+              <div class="widget widget-table">
+                <div class="widget-content">
+                  <table class="table table-condensed">
+                    <thead>
+                      <tr>
+                        <th>Paid On</th>
+                        <th>Type</th>
+                        <th>Status</th>
+                        <th>Memo</th>
+                        <th>Amount</th>
+                        <th>Action</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>2/20/2015</td>
+                        <td>Amex</td>
+                        <td>Pending</td>
+                        <td>1234</td>
+                        <td>$275.00</td>
+                        <td>
+                          <a href="#"><i class="fa fa-pencil fa-lg"></i></a>
+                          <a data-confirm="Are you sure?" rel="nofollow" data-method="delete" href="#"><i class="fa fa-trash-o fa-lg"></i></a>                      
+                        </td>
+
+                      </tr>
+                      
+                    </tbody>
+                    
+                  </table>
+                </div>
+              </div>                
+            </div>
+
+            
+            <div>
+              <h5>
+                <a href="#">
+                  <i class="fa fa-bars"></i><strong> Tasks </strong>
+                </a>
+              </h5>
+              <div class="widget widget-table">
+                <div class="widget-content">
+                  <table class="table table-condensed">
+                    <thead>
+                      <tr>
+                        <th>Name</th>
+                        <th>Description</th>
+                        <th>Quantity</th>
+                        <th>Unit Price</th>
+                        <th>Total</th>
+                        <th>Action</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>R-SLAB</td>
+                        <td>Slab Detection</td>
+                        <td>1</td>
+                        <td>$275.00</td>
+                        <td>$275.00</td>
+                        <td>
+                          <a href="#"><i class="fa fa-pencil fa-lg"></i></a>
+                          <a data-confirm="Are you sure?" rel="nofollow" data-method="delete" href="#"><i class="fa fa-trash-o fa-lg"></i></a>                      
+                        </td>
+                      </tr>
+                      
+                    </tbody>
+                    
+                  </table>
+                </div>
+              </div>                
+            </div>
+
+
+            <div>
+              <h5>
+                <a href="#">
+                  <i class="fa fa-shopping-cart"></i><strong> Purchase Orders </strong>
+                </a>
+              </h5>
+              <div class="widget widget-table">
+                <div class="widget-content">
+                  <table class="table table-condensed">
+                    <thead>
+                      <tr>
+                        <th>Tag #</th>
+                        <th>Vendor</th>
+                        <th>Technician</th>
+                        <th>Date</th>
+                        <th>Status</th>
+                        <th>Summary</th>
+                        <th>Amount</th>
+                        <th>Action</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>33456008</td>
+                        <td>Home Depot</td>
+                        <td>Adam</td>
+                        <td>2/20/2015</td>
+                        <td>Pending</td>
+                        <td>pipe, insulation</td>
+                        <td>$50.00</td>
+                        <td>
+                          <a href="#"><i class="fa fa-pencil fa-lg"></i></a>
+                          <a data-confirm="Are you sure?" rel="nofollow" data-method="delete" href="#"><i class="fa fa-trash-o fa-lg"></i></a>                      
+                        </td>
+                      </tr>
+                      
+                    </tbody>
+                    
+                  </table>
+                </div>
+              </div>                
+            </div>
+
+
+
+        </div>
+      </div> 
     </div>
+
+
   </div>
 </body>
 </html>
