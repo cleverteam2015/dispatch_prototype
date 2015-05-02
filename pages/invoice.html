@@ -7,12 +7,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link rel="stylesheet" media="all" href="../bootstrap/css/bootstrap.min.css">
-  <link rel="stylesheet" media="all" href="../bootstrap/css/dashboard.css">
   <link rel="stylesheet" media="all" href="../bootstrap/css/bootstrap-theme.min.css">
-  <script type="../bootstrap/js/bootstrap.min.js"></script>
-  <script type="../bootstrap/js/npm.js"></script>
-
+  <link rel="stylesheet" media="all" href="../bootstrap/css/dashboard.css">
   <link rel="stylesheet" href="../font-awesome-4.3.0/css/font-awesome.min.css">
+  
+  <script src="../js/jquery-1.11.2.min.js"></script>
+  <script src="../bootstrap/js/bootstrap.min.js"></script>
 
 </head>
 <body>
@@ -61,6 +61,22 @@
             <div class="panel panel-default">
                 <div class="panel-heading">
                     <i class="fa fa-building-o"></i> <strong> Invoice #33456001 </strong>
+                    <div class="pull-right">
+                      <div class="btn-group">
+                        <button type="button" class="btn btn-success btn-xs" data-toggle="dropdown">
+                          <strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Actions&nbsp;&nbsp;</strong>
+                          <span class="caret"></span>&nbsp;&nbsp;
+                        </button>
+                          <ul class="dropdown-menu">
+                            <li><a href="#">Update Invoice Details</a></li>
+                            <li><a href="#">Add payment</a></li>
+                            <li><a href="#">Add purchase order</a></li>
+                            <li><a href="#">Add estimate</a></li>
+                            <li><a href="#">Adjust splits</a></li>
+                            <li><a href="#">Add payroll adjustment</a></li>
+                          </ul>
+                      </div>
+                    </div>                    
                 </div>
                 <!-- /.panel-heading -->
                 <div class="panel-body">
@@ -102,15 +118,6 @@
                         </a>
                     </div>
                     <!-- /.list-group -->
-                      <button type="button" class="btn btn-default btn-block">
-                        <strong>View All Actions  </strong>
-                        <span class="caret"></span>
-                      </button>
-                        <ul class="dropdown-menu">
-                          <li class="dropdown-header">Actions</li>  
-                          <li><a href="#"></a>Add Payment</li>  
-                        </ul>
-                   
                 </div>
                 <!-- /.panel-body -->
             </div>
