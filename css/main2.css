@@ -18,27 +18,28 @@ header {
 }
 
 body{
-  background: #ffffff;
-  color: #336799;  
+  background: #336799;
+  color: #ffffff;  
 }
 
 
 #btn-round {
     border: 3px solid #66cdcc;
     padding: 5px 20px; 
-    background: #336799;
+    background: #ffffff;
     width: 250px;
     border-radius: 3em;
-    color: #ffffff;
+    color: #336799;
 }
 
 #white{
-  color: #336799;    
+  color: #ffffff;    
 }
 
 #summary{
     font-size: 16px;  
 }
+
 
 #job-list {
     border: 2px solid #66cdcc;
