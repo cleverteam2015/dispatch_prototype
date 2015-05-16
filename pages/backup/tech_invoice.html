@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>Dispatch Service</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" media="all" href="../bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" media="all" href="../bootstrap/css/bootstrap-theme.min.css">
+  <link rel="stylesheet" media="all" href="../css/main.css">
+  <link rel="stylesheet" href="../font-awesome-4.3.0/css/font-awesome.min.css">
+  
+  <script src="../js/jquery-1.11.2.min.js"></script>
+  <script src="../bootstrap/js/bootstrap.min.js"></script>
+
+
+
+</head>
+<body>
+
+  <div class="container">
+    <div>
+        <br>
+        <div class="row">
+          <div class="col-md-6 col-lg-6">
+            <img src="../images/ald-logo-top-01.jpg" class="img-responsive" alt="Responsive image">
+          </div>
+          <div class="col-md-6 col-lg-6">
+            <h3><i class="fa fa-building-o fa-lg" style="color:red"></i> <strong> Inovice #: 1929831</strong></h3>
+          </div>
+        </div>
+    </div>
+
+    <div>
+      <br>
+      <div class="row">
+        <div class="col-md-6 col-lg-6">
+          <div id="font-m">
+              <strong>Service Location</strong><br>
+              Customer: John Smith<br>
+              Address: 110 Central Avenue, Seal Beach, CA 90740 USA <br>
+              Contact No.: (714) 342-1290
+          </div> 
+        </div>
+        <div class="col-md-6 col-lg-6">
+          <div id="font-m">
+              <strong>Bill To</strong><br>
+              Customer: Liberty Insurance Inc.<br>
+              Address: 1067 Parkview Drive, Corona, CA 91720 USA <br>
+              Contact No.: (714) 562-4312
+          </div> 
+        </div>
+      </div>
+    </div>
+
+    <br>
+    <div class="row">
+      <div class="col-md-12 col-lg-12" id="font-m">
+        <strong>Line Item: </strong>
+      </div> 
+    </div>
+
+    <div class="row">
+      <div class="col-md-12 col-lg-12">
+        <div id="inv-list">
+          <a href="tech_job_detail.html" id="white"> 
+            <strong>R-SLAB</strong> 
+              <a href="#" class="btn btn-primary pull-right" id="btn-round-xxs">
+                  <i class="fa fa-pencil fa-lg"></i>
+              </a> 
+              <br>
+            Technician performed a complete electronic leak detection on potable water hot and cold water system. Tested all pressurized pipes at _30_* psi.
+            <br>  
+            <strong>Quantity:</strong> 1 &nbsp;&nbsp;&nbsp;<strong>Unit Price:</strong> $275.00 
+            <br>
+            <strong>Total:</strong> $275.00
+            <br>
+          </a> 
+        </div> 
+        <div id="inv-list">
+          <a href="tech_job_detail.html" id="white"> 
+            <strong>B-Test</strong> 
+              <a href="#" class="btn btn-primary pull-right" id="btn-round-xxs">
+                  <i class="fa fa-pencil fa-lg"></i>
+              </a> 
+              <br>
+            Pool Bucket Test
+            <br>  
+            <strong>Quantity:</strong> 1 &nbsp;&nbsp;&nbsp;<strong>Unit Price:</strong> $325.00 
+            <br>
+            <strong>Total:</strong> $325.00
+            <br>
+          </a> 
+        </div> 
+
+      </div>
+    </div>
+    
+
+    <div class="row" id="font-m">
+      <div class="col-md-3 col-lg-3" align="center">
+        <p><strong>Subtotal: </strong>$600.00</p>
+      </div>
+      <div class="col-md-3 col-lg-3" align="center">
+        <p><strong>Tax: </strong>$6.00</p>
+      </div>
+      <div class="col-md-3 col-lg-3" align="center">
+        <p><strong>Total: </strong>$606.00</p>
+      </div>
+      <div class="col-md-3 col-lg-3" align="center">
+        <p><strong>Balance: </strong>$606.00</p>
+      </div>
+    </div>
+    <br>
+
+    <div class="row">
+      <div class="col-md-12 col-lg-12" id="font-m">
+        <strong>Authorized: &nbsp; <span style="color:green">Done</span> </strong> 
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="#" class="btn btn-primary" id="btn-round-xxs">
+            <i class="fa fa-pencil fa-lg"></i>
+        </a> 
+      </div> 
+    </div>
+    <br>
+
+    <div class="row">
+      <div class="col-md-12 col-lg-12" id="font-m">
+        <strong>Pictures: &nbsp;  
+        <strong>[Before Fix - </strong><span style="color:red">Pending</span> &nbsp;&nbsp;&nbsp;&nbsp;
+        <strong>After Fix - </strong><span style="color:red">Pending</span>] </strong> 
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="#" class="btn btn-primary" id="btn-round-xxs">
+            <i class="fa fa-pencil fa-lg"></i>
+        </a> 
+
+      </div> 
+    </div>
+    <br>
+
+    <div class="row">
+      <div class="col-md-12 col-lg-12" id="font-m">
+        <strong>Payment: </strong>
+
+        <div id="inv-list">
+          <a href="tech_job_detail.html" id="white"> 
+            <strong>Payment of P600.00 made on 01/02/2015 10:00AM (Amex)</strong> 
+              <a href="#" class="btn btn-primary pull-right" id="btn-round-xxs">
+                  <i class="fa fa-pencil fa-lg"></i>
+              </a> 
+              <br>
+              Notes: 1234<br>  
+          </a> 
+        </div> 
+      </div> 
+    </div>
+    <br>
+    <div class="row">
+      <div class="col-md-12 col-lg-12" id="font-m">
+        <strong>Acknowledged: &nbsp; <span style="color:red">Pending</span> </strong> 
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="#" class="btn btn-primary" id="btn-round-xxs">
+            <i class="fa fa-pencil fa-lg"></i>
+        </a> 
+      </div> 
+    </div>
+    <br>
+
+    <br>
+    <div class="row">
+      <div class="col-md-4 col-lg-4" align="center">
+        <a href="#" class="btn btn-primary" id="btn-round">
+            <i class="fa fa-plus-square fa-3x pull-left"></i>
+            <h4><span>Add Invoice Item</span></h4>
+        </a>        
+      </div>
+      <div class="col-md-4 col-lg-4" align="center">
+        <a href="#" class="btn btn-primary" id="btn-round">
+            <i class="fa fa-calculator fa-3x pull-left"></i>
+            <h4><span>Create Estimate</span></h4>
+        </a>        
+      </div>
+      <div class="col-md-4 col-lg-4" align="center">
+        <a href="tech_invoice_auth.html" class="btn btn-primary" id="btn-round">
+            <i class="fa fa-thumbs-up fa-3x pull-left"></i>
+            <h4><span>Authorize</span></h4>
+        </a>        
+      </div>
+
+    </div>
+
+    <br>
+    <div class="row">
+      <div  class="col-md-4 col-lg-4" align="center">
+        <a href="tech.html" class="btn btn-primary" id="btn-round">
+            <i class="fa fa-camera fa-3x pull-left"></i>
+            <h4><span>Take Picture</span></h4>
+        </a>
+      </div>
+      <div class="col-md-4 col-lg-4" align="center">
+        <a href="tech_complete.html" class="btn btn-primary" id="btn-round">
+            <i class="fa fa-credit-card fa-3x pull-left"></i>
+            <h4><span>Payment</span></h4>
+        </a>        
+      </div>
+      <div  class="col-md-4 col-lg-4" align="center">
+        <a href="tech_invoice_auth.html" class="btn btn-primary" id="btn-round">
+            <i class="fa fa-check-square-o fa-3x pull-left"></i>
+            <h4><span>Acknowledge</span></h4>
+        </a>
+      </div>
+    </div>
+    <br>
+
+    <div class="row">
+      <div class="col-md-4 col-lg-4" align="center">
+        <a href="tech_complete.html" class="btn btn-primary" id="btn-round">
+            <i class="fa fa-certificate fa-3x pull-left"></i>
+            <h4><span>Finish Job</span></h4>
+        </a>        
+      </div>
+      <div class="col-md-4 col-lg-4" align="center">
+        <a href="#" class="btn btn-primary" id="btn-round">
+            <i class="fa fa-envelope fa-3x pull-left"></i>
+            <h4><span>Email Invoice</span></h4>
+        </a>        
+      </div>
+      <div  class="col-md-4 col-lg-4" align="center">
+        <a href="tech.html" class="btn btn-primary" id="btn-round">
+            <i class="fa fa-home fa-3x pull-left"></i>
+            <h4><span>Home</span></h4>
+        </a>
+      </div>
+ 
+    </div>
+
+  <br>
+  </div>
+    
+</body>
+</html>
