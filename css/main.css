@@ -22,6 +22,15 @@ body{
   color: #336799;  
 }
 
+#btn-round-xl {
+    border: 3px solid #66cdcc;
+    padding: 5px 20px; 
+    background: #1D92AF;
+    width: 250px;
+    height: 200px;
+    border-radius: 1em;
+    color: #ffffff;
+}
 
 #btn-round {
     border: 3px solid #66cdcc;
@@ -55,9 +64,9 @@ body{
     border: 2px solid #66cdcc;
     padding: 5px 10px; 
     background: #336799;
-    width: 50px;
+    width: 55px;
     height: 45px;
-    border-radius: 3em;
+    border-radius: 1em;
     color: #ffffff;
 }
 
@@ -87,6 +96,9 @@ body{
 #font-l{
     font-size: 20px;
 }
+#font-xl{
+    font-size: 22px;
+}
 
 #font-m{
     font-size: 16px;
@@ -95,6 +107,7 @@ body{
 #label{
     font-weight: bold;
 }
+
 #job-list {
     border: 2px solid #66cdcc;
     padding: 10px 30px; 
@@ -106,5 +119,13 @@ body{
     border: 1px solid #66cdcc;
     padding: 10px 30px; 
     border-radius: 1em;
+    font-size: 15px;
+}
+
+#sign-box {
+    border: 1px solid #66cdcc;
+    padding: 10px 20px; 
+    border-radius: 1em;
+    height: 150px;
     font-size: 15px;
 }
