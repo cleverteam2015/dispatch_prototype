@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <!-- saved from url=(0035)http://localhost:3000/main_entities -->
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <title>Dispatch Service</title>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -30,7 +33,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="./index.html">ALDOC</a>
+          <a class="navbar-brand" href="./index.html">ALD</a>
         </div>
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav">
@@ -56,27 +59,12 @@
         <br><br><br>
 
         <div class="col-lg-3">
-        <img src="../images/aldoc.png" class="img-responsive" alt="Responsive image">
+        <img src="../images/ald-logo-top-01.jpg" class="img-responsive" alt="Responsive image">
+        <br>
 
             <div class="panel panel-default">
                 <div class="panel-heading">
                     <i class="fa fa-building-o"></i> <strong> Invoice #33456001 </strong>
-                    <div class="pull-right">
-                      <div class="btn-group">
-                        <button type="button" class="btn btn-success btn-xs" data-toggle="dropdown">
-                          <strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Actions&nbsp;&nbsp;</strong>
-                          <span class="caret"></span>&nbsp;&nbsp;
-                        </button>
-                          <ul class="dropdown-menu">
-                            <li><a href="#">Update Invoice Details</a></li>
-                            <li><a href="#">Add payment</a></li>
-                            <li><a href="#">Add purchase order</a></li>
-                            <li><a href="#">Add estimate</a></li>
-                            <li><a href="#">Adjust splits</a></li>
-                            <li><a href="#">Add payroll adjustment</a></li>
-                          </ul>
-                      </div>
-                    </div>                    
                 </div>
                 <!-- /.panel-heading -->
                 <div class="panel-body">
@@ -87,7 +75,7 @@
                             </span>
                         </a>
                         <a href="#" class="list-group-item">
-                            <i class="fa fa-flag-checkered"></i> Completed On
+                            <i class="fa fa-flag-checkered"></i> Completion Date
                             <span class="pull-right text-muted small"><em>2/20/2025 8:30 PM</em>
                             </span>
                         </a>
@@ -128,27 +116,26 @@
             <div class="invoice-header">
               <h5>
                 <a href="#">
-                  <i class="fa fa-building-o"></i> <strong> Invoice Details </strong>
+                  <i class="fa fa-building-o"></i> <strong> Invoice Details &nbsp;</strong>
                 </a>
+                <a href="#"><i class="fa fa-pencil fa-lg" style="color:green"></i></a>
               </h5>
                 
               <dl class="dl-horizontal">
                 <dt><strong>Job Summary: </strong> </dt>
-                <dd>Test Job Only </dd>
+                <dd>Leak in bathroom. </dd>
                 <dt><strong>Bill To: </strong></dt>
                 <dd>
-                    Homeowner Ass.
-                    123 North Main Street
-                    New York, 213359  
+                    <strong>Safety Inc</strong><br>
+                    795 Folsom Ave, Suite 600<br>
+                    San Francisco, CA 94107
                 </dd>
                 <dt><strong>Service Location: </strong></dt>
                 <dd>
-                    Fix Service Ass.
-                    123 North Main Street
-                    New York, 213359  
+                    <strong>Safety Inc</strong><br>
+                    795 Folsom Ave, Suite 600<br>
+                    San Francisco, CA 94107
                 </dd>
-                <dt><strong>Invoice Summary: </strong></dt>
-                <dd>None</dd>
                 <dt><strong>Subtotal: </strong></dt>
                 <dd>$275.00</dd>
                 <dt><strong>Tax: </strong></dt>
@@ -163,7 +150,10 @@
             <div>
               <h5>
                 <a href="#">
-                  <i class="fa fa-credit-card"></i><strong> Payment</strong>
+                  <i class="fa fa-credit-card"></i><strong> Payment&nbsp;</strong>
+                </a>
+                <a href="#">
+                  <i class="fa fa-plus-circle fa-lg " style="color:green"></i>
                 </a>
               </h5>
               <div class="widget widget-table">
@@ -171,10 +161,10 @@
                   <table class="table table-condensed">
                     <thead>
                       <tr>
-                        <th>Paid On</th>
+                        <th>Date</th>
                         <th>Type</th>
                         <th>Status</th>
-                        <th>Memo</th>
+                        <th>Notes</th>
                         <th>Amount</th>
                         <th>Action</th>
                       </tr>
@@ -187,8 +177,8 @@
                         <td>1234</td>
                         <td>$275.00</td>
                         <td>
-                          <a href="#"><i class="fa fa-pencil fa-lg"></i></a>
-                          <a data-confirm="Are you sure?" rel="nofollow" data-method="delete" href="#"><i class="fa fa-trash-o fa-lg"></i></a>                      
+                          <a href="#"><i class="fa fa-pencil fa-lg" style="color:green"></i></a>
+                          <a data-confirm="Are you sure?" rel="nofollow" data-method="delete" href="#"><i class="fa fa-trash-o fa-lg" style="color:green"></i></a>                      
                         </td>
 
                       </tr>
@@ -204,7 +194,10 @@
             <div>
               <h5>
                 <a href="#">
-                  <i class="fa fa-bars"></i><strong> Tasks </strong>
+                  <i class="fa fa-bars"></i><strong> Tasks &nbsp;</strong>
+                </a>
+                <a href="#">
+                  <i class="fa fa-plus-circle fa-lg" style="color:green"></i>
                 </a>
               </h5>
               <div class="widget widget-table">
@@ -228,8 +221,8 @@
                         <td>$275.00</td>
                         <td>$275.00</td>
                         <td>
-                          <a href="#"><i class="fa fa-pencil fa-lg"></i></a>
-                          <a data-confirm="Are you sure?" rel="nofollow" data-method="delete" href="#"><i class="fa fa-trash-o fa-lg"></i></a>                      
+                          <a href="#"><i class="fa fa-pencil fa-lg " style="color:green"></i></a>
+                          <a data-confirm="Are you sure?" rel="nofollow" data-method="delete" href="#"><i class="fa fa-trash-o fa-lg" style="color:green"></i></a>                      
                         </td>
                       </tr>
                       
@@ -244,7 +237,10 @@
             <div>
               <h5>
                 <a href="#">
-                  <i class="fa fa-shopping-cart"></i><strong> Purchase Orders </strong>
+                  <i class="fa fa-shopping-cart"></i><strong> Purchase Orders &nbsp;</strong>
+                </a>
+                <a href="#">
+                  <i class="fa fa-plus-circle fa-lg" style="color:green"></i>
                 </a>
               </h5>
               <div class="widget widget-table">
@@ -252,11 +248,10 @@
                   <table class="table table-condensed">
                     <thead>
                       <tr>
-                        <th>Tag #</th>
+                        <th>PO #</th>
                         <th>Vendor</th>
                         <th>Technician</th>
                         <th>Date</th>
-                        <th>Status</th>
                         <th>Summary</th>
                         <th>Amount</th>
                         <th>Action</th>
@@ -268,12 +263,11 @@
                         <td>Home Depot</td>
                         <td>Adam</td>
                         <td>2/20/2015</td>
-                        <td>Pending</td>
                         <td>pipe, insulation</td>
                         <td>$50.00</td>
                         <td>
-                          <a href="#"><i class="fa fa-pencil fa-lg"></i></a>
-                          <a data-confirm="Are you sure?" rel="nofollow" data-method="delete" href="#"><i class="fa fa-trash-o fa-lg"></i></a>                      
+                          <a href="#"><i class="fa fa-pencil fa-lg" style="color:green"></i></a>
+                          <a data-confirm="Are you sure?" rel="nofollow" data-method="delete" href="#"><i class="fa fa-trash-o fa-lg" style="color:green"></i></a>                      
                         </td>
                       </tr>
                       
@@ -283,6 +277,19 @@
                 </div>
               </div>                
             </div>
+
+
+            <div>
+              <h5>
+                <a href="#">
+                  <i class="fa fa-folder-o"></i><strong> Payroll Adjustment &nbsp;</strong>
+                </a>
+                <a href="#">
+                  <i class="fa fa-plus-circle fa-lg" style="color:green"></i>
+                </a>
+              </h5>
+            </div>
+
 
         </div>
       </div> 
