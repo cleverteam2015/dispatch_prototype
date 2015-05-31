@@ -18,22 +18,22 @@ header {
 }
 
 body{
-  background: #336799;
-  color: #ffffff;  
+  background: #ffffff;
+  color: #7A7A7A;  
 }
 
 
 #btn-round {
-    border: 3px solid #66cdcc;
+    border: 3px solid #222222;
     padding: 5px 20px; 
-    background: #ffffff;
+    background: #7A7A7A;
     width: 250px;
     border-radius: 3em;
-    color: #336799;
+    color: #ffffff;
 }
 
 #white{
-  color: #ffffff;    
+  color: #7A7A7A;    
 }
 
 #summary{
@@ -42,7 +42,7 @@ body{
 
 
 #job-list {
-    border: 2px solid #66cdcc;
+    border: 2px solid #606060;
     padding: 10px 30px; 
     border-radius: 1em;
     font-size: 18px;

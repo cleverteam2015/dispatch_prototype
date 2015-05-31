@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<!-- saved from url=(0035)http://localhost:3000/main_entities -->
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>Dispatch Service</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" media="all" href="../bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" media="all" href="../bootstrap/css/bootstrap-theme.min.css">
+  <link rel="stylesheet" media="all" href="../css/main.css">
+  <link rel="stylesheet" href="../font-awesome-4.3.0/css/font-awesome.min.css">
+  
+  <script src="../js/jquery-1.11.2.min.js"></script>
+  <script src="../bootstrap/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+
+<div id="wrapper">
+    <!-- Top Menu -->
+    
+
+    <div class="navbar navbar-inverse navbar-fixed-top"  role="navigation">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="./index.html">ALD</a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li><a href="./job.html">Job</a></li>
+            <li><a href="./schedule.html">Schedule</a></li>
+            <li><a href="./board.html">Board</a></li>
+            <li><a href="./po.html">Purchase Order</a></li>
+            <li><a href="./payment.html">Payment</a></li>
+            <li><a href="./invoice.html">Invoice</a></li>
+            <li  class="active"><a href="./report.html">Report</a></li>
+            <li><a href="./settings.html">Settings</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a rel="nofollow" data-method="delete" href="./logout.html">Log out</a></li>            
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div>
+    </div>
+
+    <div id="page-wrapper" class="container-fluid" >
+
+      <div class="row">
+        <br><br><br>
+
+        <div class="col-lg-3">
+          <img src="../images/ald-logo-top-01.jpg" class="img-responsive" alt="Responsive image">
+          <br>
+
+          <div class="panel panel-default">
+              <div class="panel-heading">
+                  <i class="fa fa-file-pdf-o"></i> <strong>&nbsp; Reports </strong>
+              </div>
+              <!-- /.panel-heading -->
+              <div class="panel-body" >
+                  <div class="list-group">
+                      <a href="report.html" class="list-group-item">
+                        Accounting Reports
+                        <i class="fa fa-chevron-right pull-right"></i>
+                      </a>
+                      <a href="#" class="list-group-item">
+                        Technician Reports
+                        <i class="fa fa-chevron-right pull-right"></i>
+                      </a>
+                      <a href="#" class="list-group-item">
+                        Productivity Reports
+                        <i class="fa fa-chevron-right pull-right"></i>
+                      </a>
+                      <a href="#" class="list-group-item">
+                        Other Reports
+                        <i class="fa fa-chevron-right pull-right"></i>
+                      </a>
+                      <a href="#" class="list-group-item">
+                        Scheduled Reports
+                        <i class="fa fa-chevron-right pull-right"></i>
+                      </a>
+                      <a href="#" class="list-group-item">
+                        Schedulers
+                        <i class="fa fa-chevron-right pull-right"></i>
+                      </a>
+                  </div>
+                  <!-- /.list-group -->
+              </div>
+              <!-- /.panel-body -->
+          </div>
+        </div>
+
+        <div class="col-lg-9">
+          <br>
+          <div>
+            <span id="font-l">
+              <strong>Accounting Summary Report</strong>
+            </span>
+            <a href="../images/acct_rep.pdf">
+              <i class="fa fa-print pull-right fa-lg"><span style="font-size:12px">&nbsp;Print</i>
+            </a> 
+            <a href="../images/acct_rep.pdf">
+              <i class="fa fa-floppy-o pull-right fa-lg"><span style="font-size:12px">&nbsp;Download&nbsp;</span></i> 
+            </a>
+            <br> 
+            <br> 
+            <div class="row">
+              <div class="col-lg-4 col-md-4">
+                <strong>Business Unit:</strong> Riverside                 
+              </div>           
+              <div class="col-lg-4 col-md-4">
+                <strong>Status:</strong> Posted                 
+              </div>           
+            </div>   
+            <div class="row">
+              <div class="col-lg-4 col-md-4">
+                <strong>Report generated on:</strong> 2/24/2015 9:00am              
+              </div>           
+              <div class="col-lg-4 col-md-4">
+                <strong>Date:</strong> 2/16/2015 to 2/23/2015                 
+              </div>           
+            </div>   
+            <br>  
+          </div>
+
+          <div class="widget widget-table">
+            <span id="font-m">
+              <strong>Payments</strong>
+            </span>
+
+            <div class="widget-content">
+              <table class="table table-condensed table-striped">
+                <thead style="background:#367DA2;color:#FFFFFF">
+                  <tr>
+                    <th>Payment Type</th>
+                    <th>Quantity</th>
+                    <th>Debits</th>
+                    <th>Credits</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Cash in Bank</td>
+                    <td>712</td>
+                    <td>$450,987.35</td>
+                    <td>$5,623.90</td>
+                  </tr>
+                  <tr style="font-weight:bold">
+                    <td>Total</td>
+                    <td>712</td>
+                    <td>$450,987.35</td>
+                    <td>$5,623.90</td>
+                  </tr>                      
+                </tbody>
+                
+              </table>
+            </div>
+          </div>                
+
+          <div class="widget widget-table">
+            <span id="font-m">
+              <strong>Income</strong>
+            </span>
+
+            <div class="widget-content">
+              <table class="table table-condensed table-striped">
+                <thead style="background:#367DA2;color:#FFFFFF">
+                  <tr>
+                    <th>Customer Type</th>
+                    <th>Account</th>
+                    <th>Quantity</th>
+                    <th>Debits</th>
+                    <th>Credits</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Residential</td>
+                    <td>Bad Debt Expense</td>
+                    <td>2</td>
+                    <td>$25.00</td>
+                    <td>$0.00</td>
+                  </tr>
+                  <tr>
+                    <td>Residential</td>
+                    <td>Commercial Detection</td>
+                    <td>56</td>
+                    <td>$0.00</td>
+                    <td>$16,237.00</td>
+                  </tr>
+                  <tr>
+                    <td>Residential</td>
+                    <td>Commercial Repair</td>
+                    <td>4</td>
+                    <td>$0.00</td>
+                    <td>$1,000.00</td>
+                  </tr>
+                  <tr>
+                    <td>Residential</td>
+                    <td>Commercial Repair</td>
+                    <td>4</td>
+                    <td>$0.00</td>
+                    <td>$1,000.00</td>
+                  </tr>
+                  <tr style="font-weight:bold">
+                    <td>Total</td>
+                    <td></td>
+                    <td>120</td>
+                    <td>$450,987.35</td>
+                    <td>$5,623.90</td>
+                  </tr>                      
+                </tbody>
+                
+              </table>
+            </div>
+          </div> 
+            
+          <div class="widget widget-table">
+            <span id="font-m">
+              <strong>Taxes</strong>
+            </span>
+
+            <div class="widget-content">
+              <table class="table table-condensed table-striped">
+                <thead style="background:#367DA2;color:#FFFFFF">
+                  <tr>
+                    <th>Name</th>
+                    <th>Quantity</th>
+                    <th>Debits</th>
+                    <th>Credits</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Cash in Bank</td>
+                    <td>0</td>
+                    <td>$0.00</td>
+                    <td>$0.00</td>
+                  </tr>
+                  <tr style="font-weight:bold">
+                    <td>Total</td>
+                    <td>0</td>
+                    <td>$0.00</td>
+                    <td>$0.00</td>
+                  </tr>                      
+                </tbody>
+              </table>
+            </div>
+          </div>                
+
+        </div>
+      </div> 
+    </div>
+
+
+</div>
+
+
+</body>
+</html>

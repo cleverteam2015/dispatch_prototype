@@ -63,14 +63,14 @@
         <br>
 
             <div class="panel panel-default">
-                <div class="panel-heading" >
+                <div class="panel-heading">
                     <i class="fa fa-file-pdf-o"></i> <strong> &nbsp;Reports </strong>
 
                 </div>
                 <!-- /.panel-heading -->
                 <div class="panel-body" >
                     <div class="list-group">
-                        <a href="#" class="list-group-item">
+                        <a href="report.html" class="list-group-item">
                           Accounting Reports
                           <i class="fa fa-chevron-right pull-right"></i>
                         </a>
@@ -86,11 +86,11 @@
                           Other Reports
                           <i class="fa fa-chevron-right pull-right"></i>
                         </a>
-                        <a href="report_sked.html" class="list-group-item">
+                        <a href="#" class="list-group-item">
                           Scheduled Reports
                           <i class="fa fa-chevron-right pull-right"></i>
                         </a>
-                        <a href="report_sked.html" class="list-group-item">
+                        <a href="#" class="list-group-item">
                           Scheduler
                           <i class="fa fa-chevron-right pull-right"></i>
                         </a>
@@ -105,8 +105,7 @@
             <br>
             <div>
               <span id="font-l">
-                
-                <strong>Accounting Report</strong>
+                <strong>Add Report Schedule</strong>
               </span>
               <br>                
               <br>                
@@ -134,36 +133,47 @@
                   </select>
                 </dd>
                 <br>
-                <dt><strong>From Date: </strong></dt>
+                <dt><strong>Technician: </strong></dt>
                 <dd>
-                  <div class='input-group date' style="width:200px;color:#336799;border:1px solid #66cdcc">
-                      <input type='text' class="form-control" />
-                      <span class="input-group-addon">
-                          <span class="fa fa-calendar">
-                          </span>
-                      </span>
-                  </div>
-                 </dd>
-                <br>
-                <dt><strong>To Date: </strong></dt>
-                <dd>
-                  <div class='input-group date' style="width:200px;color:#336799;border:1px solid #66cdcc">
-                      <input type='text' class="form-control" />
-                      <span class="input-group-addon">
-                          <span class="fa fa-calendar">
-                          </span>
-                      </span>
-                  </div>
-
+                  <select class="form-control" style="width:300px;color:#336799;border:1px solid #66cdcc">
+                    <option>Select</option>
+                    <option>Orange County</option>
+                    <option>Los Angeles</option>
+                    <option>Walmart</option>
+                    <option>Smith Pipe and Supply</option>
+                  </select>
                 </dd>
                 <br>
-                  <dt></dt>
+                <dt><strong>Schedule Day: </strong></dt>
                 <dd>
-                  <a href="report_acct.html" class="btn btn-primary" id="btn-round-web">
+                   <select class="form-control" style="width:300px;color:#336799;border:1px solid #66cdcc">
+                    <option>Select</option>
+                    <option>Every business day</option>
+                    <option>Every calendar day</option>
+                    <option>Every weekend</option>
+                    <option>Every specific day</option>
+                  </select>
+               </dd>
+                <br>
+                <dt><strong>Schedule Time: </strong></dt>
+                <dd>
+                  <div class='input-group date' style="width:200px;color:#336799;border:1px solid #66cdcc">
+                      <input type='text' class="form-control" />
+                      <span class="input-group-addon">
+                          <span class="fa fa-clock-o">
+                          </span>
+                      </span>
+                  </div>
+               </dd>
+                <br>
+                <dt></dt>
+                <dd>
+                  <a href="tech_job_arrive.html" class="btn btn-primary" id="btn-round-web">
                       <i class="fa fa-file-pdf-o fa-2x pull-left"></i>
-                      <h5>Generate</h5>
+                      <h5>Schedule</h5>
                   </a>        
                 </dd>
+
 
               </dl>
             </div>

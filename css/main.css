@@ -91,6 +91,17 @@ body{
     color: #ffffff;
 }
 
+#btn-round-web {
+    border: 2px solid #66cdcc;
+    padding: 5px 10px; 
+    background: #336799;
+    width: 150px;
+    height: 45px;
+    border-radius: 2em;
+    color: #ffffff;
+}
+
+
 #btn-round-xxxs {
     border: 2px solid #66cdcc;
     padding: 3px 5px; 
@@ -149,3 +160,12 @@ body{
     height: 150px;
     font-size: 15px;
 }
+
+
+
+
+
+
+
+
+
