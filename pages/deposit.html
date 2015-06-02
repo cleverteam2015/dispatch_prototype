@@ -82,36 +82,69 @@
                             </div>
                         </div>
                         <div>
+                            <form class="form-horizontal" role="form">
                             <div class="col-lg-12">
+                                <div class="row">
+                                    <div class="col-lg-5">
+                                        <div class="row">
+                                            <div class="col-lg-3">
+                                                <h4>Deposit #:</h4>
+                                            </div>
+                                            <div class="col-lg-3">
+                                                <h4>
+                                                 <span class="label label-success ">D126</span>
+                                                 </h4>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <div class="col-lg-3">
+                                                <label for="date" class="control-label">Posting Date:</label>
+                                            </div>
+                                            <div class="col-lg-4">
+                                                <div class="input-group">
+                                                    <input type="text" class="form-control" placeholder="   06/01/2015" id="date">
+                                                     <span class="input-group-btn">
+                                                        <button type="button" class="btn btn-primary"><i    class="fa fa-calendar fa-fw"></i></button>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                            </div>
+                         <div class="col-lg-12">   
+                                <div class="row">
+                                <div class="col-lg-1">
+                                    <label for="type" class="control-label">Type:</label>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="dropdown">
+                                        <a class="btn btn-default dropdown-toggle" data-toggle="dropdown">Check <span class="caret"></span></a>
+                                        <ul class="dropdown-menu" role="menu">
+                                            <li role="presentation">
+                                                <a role="menuitem" tabindex="-1" href="#"  >Cash</a>
+                                                            </li>
+                                                <li role="presentation">
+                                                <a role="menuitem" tabindex="-1" href="#">Amex</a>
+                                                <a role="menuitem" tabindex="-1" href="#">Visa/MC/Discover</a>
+                                                </li>
+                                        </ul>
+                                    </div>
+                                </div>   
+                            </form>
+                            </row>
+                        </div>   
+                                                 </div>                                            
+ 
+                         <div class="col-lg-12">
                                 <br>
    
                                 <div class="panel panel-default">
                                     <div class="panel-heading">
                                         <h4>
-                                            <strong>Pending Payments</strong>
-                                            <a class="btn btn-primary" href="./deposit.html">Create
-                                            </a>
-                                            <div class="btn-group">
-                                              <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
-                                                Pending<span class="caret"></span>
-                                              </button>
-                                              <ul class="dropdown-menu" role="menu">
-                                                <li><a href="./deposit.html">Deposit#&nbsp;D126</a></li>
-                                                <li><a href="#">Deposit#&nbsp;D127</a></li>
-                                                <li><a href="#">Deposit#&nbsp;D128</a></li>
-                                              </ul>
-                                            </div>
-                                            <div class="col-lg-5 pull-right">
-                                                <div class="input-group">
-                                                    <input type="text" class="form-control" placeholder="   Search Job&hellip;">
-                                                    <span class="input-group-btn">
-                                                        <button type="button" class="btn btn-primary"><i    class="fa fa-search fa-fw"></i></button>
-                                                    </span>
-                                                    <span class="input-group-btn">
-                                                        <button type="button" class="btn btn-primary">Show All</button>
-                                                    </span>
-                                                </div>
-                                            </div>
+                                            <strong>Payments</strong>
                                         </h4>    
                                     </div>
                                 
@@ -121,9 +154,6 @@
                                                 <table class="table table-condensed">
                                                     <thead>
                                                         <tr>
-                                                            <th>
-                                                                <label><input type="checkbox" value=""></label>
-                                                            </th>
                                                             <th>Date Received</th>
                                                             <th>Job #</th>
                                                             <th>Service Location</th>
@@ -131,11 +161,12 @@
                                                             <th>Type</th>
                                                             <th>Description</th>
                                                             <th>Amount</th>
+                                                            <th>
+                                                            </th>
                                                         </tr>
                                                     </thead>
                                                     <tbody>
                                                         <tr>
-                                                            <td><label><input type="checkbox" value=""></label></td>
                                                             <td>12/21/2015</td>
                                                             <td>123</td>
                                                             <td>Teddy Roosevelt</td>
@@ -143,9 +174,11 @@
                                                             <td>Check</td>
                                                             <td>#1245 - Juan Pablo</td>
                                                             <td>$275.00</td>
+                                                            <td>
+                                                                <i class="fa fa-minus-circle fa-fw"></i>
+                                                            </td>
                                                         </tr>
                                                         <tr>
-                                                            <td><label><input type="checkbox" value=""></label></td>
                                                             <td>12/22/2015</td>
                                                             <td>125</td>
                                                             <td>Steve McQueen</td>
@@ -153,9 +186,11 @@
                                                             <td>Check</td>
                                                             <td>#654 - John Doe</td>
                                                             <td>$285.00</td>
+                                                            <td>
+                                                                <i class="fa fa-minus-circle fa-fw"></i>
+                                                            </td>
                                                         </tr>
                                                         <tr>
-                                                            <td><label><input type="checkbox" value=""></label></td>
                                                             <td>12/22/2015</td>
                                                             <td>122</td>
                                                             <td>John Wayneq</td>
@@ -163,6 +198,9 @@
                                                             <td>VISA</td>
                                                             <td>Ending #5487</td>
                                                             <td>$275.00</td>
+                                                            <td>
+                                                                <i class="fa fa-minus-circle fa-fw"></i>
+                                                            </td>
                                                         </tr>
                                                     </tbody>
                                                 </table>
@@ -170,8 +208,12 @@
                                         </div>
                                     </div>
                                 </div>
+
+                            <div class="col-lg-3">
+                                <a class="btn btn-primary" href="./deposit.html">Save</a>
+                                <a class="btn btn-primary" href="./payment.html">Back</a>
                             </div>
-                        </div>
+                        </div>   
                     </div>
                 </div>
             </div>

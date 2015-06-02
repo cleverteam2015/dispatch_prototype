@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Dispatch Service</title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" media="all" href="../bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" media="all" href="../bootstrap/css/bootstrap-theme.min.css">
+        <link rel="stylesheet" media="all" href="../bootstrap/css/dashboard.css">
+        <link rel="stylesheet" href="../font-awesome-4.3.0/css/font-awesome.min.css">
+        <script src="../js/jquery-1.11.2.min.js"></script>
+        <script src="../bootstrap/js/bootstrap.min.js"></script>
+    </head>
+    
+    <body>
+        <div id="wrapper">
+            <!-- Top Menu -->
+            <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="./index.html">ALDOC</a>
+                    </div>
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav">
+                            <li>
+                                <a href="./job.html">Job</a>
+                            </li>
+                            <li>
+                                <a href="./schedule.html">Schedule</a>
+                            </li>
+                            <li>
+                                <a href="./board.html">Board</a>
+                            </li>
+                            <li>
+                                <a href="./po.html">Purchase Order</a>
+                            </li>
+                            <li>
+                                <a href="./payment.html">Payment</a>
+                            </li>
+                            <li class="active">
+                                <a href="./invoice.html">Invoice</a>
+                            </li>
+                            <li>
+                                <a href="./report.html">Report</a>
+                            </li>
+                            <li>
+                                <a href="./settings.html">Settings</a>
+                            </li>
+                        </ul>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li>
+                                <a rel="nofollow" data-method="delete" href="./logout.html">Log out</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- /.navbar-collapse -->
+                </div>
+            </div>
+            <div id="page-wrapper" class="container-fluid">
+                <div class="row">
+                    <br>
+                    <br>
+                    <br>
+                    <div class="col-lg-12">
+                        <div class="row">
+                            <div class="col-lg-2">
+                                <img src="../images/aldoc.png" class="img-responsive" alt="Responsive image">
+                            </div>
+                            <div class="col-lg-4">
+                                <h5>American Leak Detection</h5>
+                                <h5>304 N. Townsend St, Ste D</h5>
+                                <h5>Santa Ana, CA 92703</h5>
+                            </div>
+                        </div>
+                        <br>
+                        <div>
+                            <div class="col-lg-12">
+                                <div class="row">
+                                    <div class="col-lg-5">
+                                        <br>
+                                        <dl class="dl-vertical">
+                                            <dt>
+                                                <strong>Service Location:</strong>
+                                            </dt>
+                                            <dd>John Doe
+                                                <span class="pull-right text-muted small ">
+                                                    <strong>
+                                                        <em>(714) 836-8477</em>
+                                                    </strong>
+                                                    <span class="label label-default ">Home</span>
+                                                </span>
+                                            </dd>
+                                            <dd>123 North Main Street, Santa Ana, 92701
+                                                <span class="pull-right text-muted
+                                            small ">
+                                                    <strong>
+                                                        <em>myemail@gmail.com</em>
+                                                    </strong>
+                                                    <span class="label label-default ">email</span>
+                                                </span>
+                                            </dd>
+                                            <dd>&nbsp;
+                                                <span class="pull-right text-muted
+                                            small ">
+                                                    <strong>
+                                                        <em>(714)836-9999</em>
+                                                    </strong>
+                                                    <span class="label label-default ">Cell</span>
+                                                </span>
+                                            </dd>
+                                            <dd>&nbsp;
+                                                <span class="pull-right text-muted
+                                            small ">
+                                                    <strong>
+                                                        <em>(714)836-9994</em>
+                                                    </strong>
+                                                    <span class="label label-default ">Cell (Yoly)</span>
+                                                </span>
+                                            </dd>
+                                        </dl>
+                                    </div>
+                                </div>
+                                <!--div class="panel panel-primary">
+                                    <div class="panel-heading">
+                                        <h5>
+                                            <i class="fa fa-building fa-fw"></i>
+                                            <strong>Account Ledger</strong>
+                                        </h5>
+                                    </div-->
+                                <div class="panel-body">
+                                    <div class="widget widget-table">
+                                        <div class="widget-content">
+                                            <table class="table table-condensed">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Date</th>
+                                                        <th>Invoice/Deposit</th>
+                                                        <th>Technician</th>
+                                                        <th>Description</th>
+                                                        <th>Charges</th>
+                                                        <th>Credit</th>
+                                                        <th>BALANCE</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>12/21/2014</td>
+                                                        <td>12345</td>
+                                                        <td>John L, Samuel</td>
+                                                        <td>Slab Detection</td>
+                                                        <td>$275.00</td>
+                                                        <td></td>
+                                                        <td>$275.00</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>12/22/2014</td>
+                                                        <td>321</td>
+                                                        <td></td>
+                                                        <td>Chk#234 - USAA Insurance</td>
+                                                        <td></td>
+                                                        <td>$275.00</td>
+                                                        <td>$0.00</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td>
+                                                            <span class="pull-right text-muted large">
+                                                                <h4>
+                                                                    <strong>
+                                                                        <em>TOTAL&nbsp;</em>
+                                                                    </strong>
+                                                                </h4>
+                                                            </span>
+                                                        </td>
+                                                        <td>
+                                                            <h4>
+                                                                <strong>
+                                                                    <em>$275.00</em>
+                                                                </strong>
+                                                            </h4>
+                                                        </td>
+                                                        <td>
+                                                            <h4>
+                                                                <strong>
+                                                                    <em>$275.00</em>
+                                                                </strong>
+                                                            </h4>
+                                                        </td>
+                                                        <td>
+                                                            <h4>
+                                                                <strong>
+                                                                    <em>$0.00</em>
+                                                                </strong>
+                                                            </h4>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>

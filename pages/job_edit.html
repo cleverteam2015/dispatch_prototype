@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Dispatch Service</title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" media="all" href="../bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" media="all" href="../bootstrap/css/bootstrap-theme.min.css">
+        <link rel="stylesheet" media="all" href="../bootstrap/css/dashboard.css">
+        <link rel="stylesheet" href="../font-awesome-4.3.0/css/font-awesome.min.css">
+        <script src="../js/jquery-1.11.2.min.js"></script>
+        <script src="../bootstrap/js/bootstrap.min.js"></script>
+    </head>
+    
+    <body>
+        <div id="wrapper">
+            <!-- Top Menu -->
+            <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="./index.html">ALDOC</a>
+                    </div>
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav">
+                            <li class="active">
+                                <a href="./job.html">Job</a>
+                            </li>
+                            <li>
+                                <a href="./schedule.html">Schedule</a>
+                            </li>
+                            <li>
+                                <a href="./board.html">Board</a>
+                            </li>
+                            <li>
+                                <a href="./po.html">Purchase Order</a>
+                            </li>
+                            <li>
+                                <a href="./payment.html">Payment</a>
+                            </li>
+                            <li>
+                                <a href="./invoice.html">Invoice</a>
+                            </li>
+                            <li>
+                                <a href="./report.html">Report</a>
+                            </li>
+                            <li>
+                                <a href="./settings.html">Settings</a>
+                            </li>
+                        </ul>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li>
+                                <a rel="nofollow" data-method="delete" href="./logout.html">Log out</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- /.navbar-collapse -->
+                </div>
+            </div>
+            <div id="page-wrapper" class="container-fluid">
+                <div class="col-md-12">
+                    <hr>
+                </div>
+            </div>
+            <br>
+            <div class="section">
+                <div class="container">
+                    <h2>
+                        <strong>Job # 12345</strong>
+                    </h2>
+                    <br>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <form class="form-horizontal" role="form">
+                                <div class="form-group">
+                                    <div class="form-group">
+                                        <div class="col-sm-7 col-sm-offset-1">
+                                            <label class="radio-inline">
+                                                <input type="radio" name="opttype" checked="">Residential</label>
+                                            <label class="radio-inline">
+                                                <input type="radio" name="opttype">Commercial</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <label for="bu" class="control-label">Business Unit :</label>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <div class="dropdown">
+                                            <a class="btn btn-primary dropdown-toggle" data-toggle="dropdown"> OC <span class="caret"></span></a>
+                                            <ul class="dropdown-menu" role="menu">
+                                                <li role="presentation">
+                                                    <a role="menuitem" tabindex="-1" href="#">South Bay</a>
+                                                </li>
+                                                <li role="presentation">
+                                                    <a role="menuitem" tabindex="-1" href="#">Riverside</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-sm-4">
+                                        <label for="Property" class="control-label">Property Type:</label>
+                                    </div>
+                                    <div class="col-sm-8">
+                                        <div class="dropdown">
+                                            <a class="btn btn-primary dropdown-toggle" data-toggle="dropdown"> Homeowner <span class="caret"></span></a>
+                                            <ul class="dropdown-menu" role="menu">
+                                                <li role="presentation">
+                                                    <a role="menuitem" tabindex="-1" href="#">Insurance</a>
+                                                </li>
+                                                <li role="presentation">
+                                                    <a role="menuitem" tabindex="-1" href="#">HOA</a>
+                                                </li>
+                                                <li role="presentation">
+                                                    <a role="menuitem" tabindex="-1" href="#">Gov't Agency</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-sm-4">
+                                        <label for="campaign" class="control-label">Campaign:</label>
+                                    </div>
+                                    <div class="col-sm-8">
+                                        <div class="dropdown">
+                                            <a class="btn btn-primary dropdown-toggle" data-toggle="dropdown"> Internet <span class="caret"></span></a>
+                                            <ul class="dropdown-menu" role="menu">
+                                                <li role="presentation">
+                                                    <a role="menuitem" tabindex="-1" href="#">Yellow pages</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-sm-offset-1 col-sm-10">
+                                        <div class="checkbox-inline">
+                                            <label>
+                                                <input type="checkbox" checked="">Pager</label>
+                                        </div>
+                                        <div class="checkbox-inline">
+                                            <label>
+                                                <input type="checkbox" checked="">Pool Referral</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="col-md-8">
+
+                            <div class="form-group">
+                                <div class="col-lg-12">
+                                    <div class="radio-inline">
+                                        <label>
+                                            <input type="radio"><span class="label label-success ">Billing<span></label>
+                                    </div>
+                                    <div class="radio-inline">
+                                        <label>
+                                        <input type="radio"><span class="label label-success ">COLLECT<span></div>
+                                </div>
+                            </div>    
+                            <br>
+                            <div class="form-group">
+                                <div class="col-sm-3">
+                                    <label for="Claim" class="control-label">Claim # (if any) :</label>
+                                </div>
+                                <div class="col-sm-5">
+                                    <input type="text" class="form-control" id="claim" value="1234567890">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-sm-12">
+                                    <label for="details" class="control-label">
+                                        <i class="fa fa-building-o"></i>&nbsp;Job Details :</label>
+                                </div>
+                                <div class="col-sm-12">
+                                    <textarea class="form-control" id="details" rows="15">SLAB DETECTION: Brian spoke to Mark to set this appt. This is a SFR with
+                                        3 bathrooms. House was built in 2003. Homeowner stated there is water showing
+                                        in the middle of the floor . Homeowner stated that the floor is warm. Homeowner
+                                        stated that the water is puddling in the floor. Homeowner stated that this
+                                        was noticed today. CALL 30 minutes before. TEST all pressurized lines.
+                                        QUOTED: $225.00. ONSITE CONTACT: Mark (951) 206-1940. COLLECT REF TKT:86281
+                                        ($275) 2/11/11 REPAIR - Abel and Brian came out for a hot water line reroute.
+                                        (EV)</textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col-md-12 text-center">
+                            <a class="btn btn-primary">Save</a>
+                            <a class="btn btn-primary">Clear</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>

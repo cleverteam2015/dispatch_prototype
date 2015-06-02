@@ -1,61 +1,266 @@
 <!DOCTYPE html>
-<!-- saved from url=(0035)http://localhost:3000/main_entities -->
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title>Dispatch Service</title>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <link rel="stylesheet" media="all" href="../bootstrap/css/bootstrap.min.css">
-  <link rel="stylesheet" media="all" href="../css/dashboard.css">
-  <link rel="stylesheet" media="all" href="../bootstrap/css/bootstrap-theme.min.css">
-  <script type="../bootstrap/js/bootstrap.min.js"></script>
-  <script type="../bootstrap/js/npm.js"></script>
-
-  <link rel="stylesheet" href="../font-awesome-4.3.0/css/font-awesome.min.css">
-
-</head>
-<body>
-
-<div id="wrapper">
-    <!-- Top Menu -->
+<html>
     
-
-    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-      <div class="container-fluid">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="./index.html">Home</a>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Dispatch Service</title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" media="all" href="../bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" media="all" href="../bootstrap/css/bootstrap-theme.min.css">
+        <link rel="stylesheet" media="all" href="../bootstrap/css/dashboard.css">
+        <link rel="stylesheet" href="../font-awesome-4.3.0/css/font-awesome.min.css">
+        <script src="../js/jquery-1.11.2.min.js"></script>
+        <script src="../bootstrap/js/bootstrap.min.js"></script>
+    </head>
+    
+    <body>
+        <div id="wrapper">
+            <!-- Top Menu -->
+            <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="./index.html">ALDOC</a>
+                    </div>
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav">
+                            <li class="active">
+                                <a href="./job.html">Job</a>
+                            </li>
+                            <li>
+                                <a href="./schedule.html">Schedule</a>
+                            </li>
+                            <li>
+                                <a href="./board.html">Board</a>
+                            </li>
+                            <li>
+                                <a href="./po.html">Purchase Order</a>
+                            </li>
+                            <li>
+                                <a href="./payment.html">Payment</a>
+                            </li>
+                            <li>
+                                <a href="./invoice.html">Invoice</a>
+                            </li>
+                            <li>
+                                <a href="./report.html">Report</a>
+                            </li>
+                            <li>
+                                <a href="./settings.html">Settings</a>
+                            </li>
+                        </ul>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li>
+                                <a rel="nofollow" data-method="delete" href="./logout.html">Log out</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- /.navbar-collapse -->
+                </div>
+            </div>
+            <div id="page-wrapper" class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="jumbotron">
+                            <form class="inline" role="form">
+                                <div class="form-group">
+                                    <div class="col-sm-3">
+                                        <a class="btn btn-primary"><i class="fa fa-search"></i>&nbsp;Search</a>
+                                        <a class="btn btn-primary" href="./location_billing.html"><i class="fa fa-plus"></i>&nbsp;New</a>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-sm-3">
+                                        <input type="text" class="form-control" id="name" placeholder="LastName, FirstName">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-sm-3">
+                                        <input type="text" class="form-control" id="address" placeholder="Address">
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="col-sm-1">
+                                            <input type="text" class="form-control" id="zipcode" placeholder="Zip">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="col-sm-2">
+                                            <input type="text" class="form-control" id="contact" placeholder="contact">
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12">
+                <hr>
+            </div>
         </div>
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-          <ul class="nav navbar-nav">
-            <li><a href="./job.html">Job</a></li>
-            <li><a href="./schedule.html">Schedule</a></li>
-            <li><a href="./board.html">Board</a></li>
-            <li><a href="./po.html">Purchase Order</a></li>
-            <li><a href="./payment.html">Payment</a></li>
-            <li><a href="./invoice.html">Invoice</a></li>
-            <li><a href="./report.html">Report</a></li>
-            <li class="active"><a href="./settings.html">Settings</a></li>
-          </ul>
-          <ul class="nav navbar-nav navbar-right">
-            <li><a rel="nofollow" data-method="delete" href="./logout.html">Log out</a></li>            
-          </ul>
-        </div><!-- /.navbar-collapse -->
-      </div>
-    </div>
+        <div class="section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <form class="form-horizontal" role="form">
+                            <div class="form-group">
+                                <div class="form-group">
+                                    <div class="col-sm-7 col-sm-offset-1">
+                                        <label class="radio-inline">
+                                            <input type="radio" name="opttype">Residential</label>
+                                        <label class="radio-inline">
+                                            <input type="radio" name="opttype">Commercial</label>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <label for="bu" class="control-label">Business Unit :</label>
+                                </div>
+                                <div class="col-sm-4">
+                                    <label for="bu" class="control-label">
+                                        <strong>Orange</strong>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-sm-4">
+                                    <label for="Property" class="control-label">Property Type:</label>
+                                </div>
+                                <div class="col-sm-8">
+                                    <div class="dropdown">
+                                        <a class="btn btn-primary dropdown-toggle" data-toggle="dropdown"> Homeowner <span class="caret"></span></a>
+                                        <ul class="dropdown-menu" role="menu">
+                                            <li role="presentation">
+                                                <a role="menuitem" tabindex="-1" href="#">Insurance</a>
+                                            </li>
+                                            <li role="presentation">
+                                                <a role="menuitem" tabindex="-1" href="#">HOA</a>
+                                            </li>
+                                            <li role="presentation">
+                                                <a role="menuitem" tabindex="-1" href="#">Gov't Agency</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-sm-12">
+                                         <div class="form-group">
+                                            <div class="col-lg-4">
+                                                <label for="date" class="control-label">Schedule:</label>
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <div class="input-group">
+                                                    <input type="text" class="form-control" placeholder="   06/01/2015" id="date">
+                                                     <span class="input-group-btn">
+                                                        <button type="button" class="btn btn-primary"><i    class="fa fa-calendar fa-fw"></i></button>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                               </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-sm-4">
+                                    <label for="time" class="control-label">Time :</label>
+                                </div>
+                                <div class="col-sm-4">
+                                    <input type="text" class="form-control" id="time" value="5:20 PM">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-sm-4">
+                                    <label for="technician" class="control-label">Technician :</label>
+                                </div>
+                                <div class="col-sm-8">
+                                    <div class="dropdown">
+                                        <a class="btn btn-primary dropdown-toggle" data-toggle="dropdown"> Select Technician <span class="caret"></span></a>
+                                        <ul class="dropdown-menu" role="menu">
+                                            <li role="presentation">
+                                                <a role="menuitem" tabindex="-1" href="#">Johnny</a>
+                                            </li>
+                                            <li role="presentation">
+                                                <a role="menuitem" tabindex="-1" href="#">Scott</a>
+                                            </li>
+                                            <li role="presentation">
+                                                <a role="menuitem" tabindex="-1" href="#">Miguel</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-sm-offset-1 col-sm-10">
+                                    <div class="checkbox-inline">
+                                        <label>
+                                            <input type="checkbox">Pager</label>
+                                    </div>
+                                    <div class="checkbox-inline">
+                                        <label>
+                                            <input type="checkbox">Pool Referral</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-sm-2">
+                                    <label for="Notes" class="control-label">
+                                        <i class="fa fa-comment"></i>&nbsp; Notes:</label>
+                                </div>
+                                <div class="col-sm-10">
+                                    <textarea class="form-control" id="notes" rows="3">Homeowner states leak in the bathroom</textarea>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="form-group">
+                            <div class="col-lg-12">
+                                <div class="radio-inline">
+                                    <div class="radio-inline">
+                                        <label>
+                                            <input type="radio"><span class="label label-success ">Billing<span></label>
+                                    </div>
+                                    <div class="radio-inline">
+                                        <label>
+                                        <input type="radio"><span class="label label-success ">COLLECT<span></div>
+                                </div>
+                            </div>
+                    </div>    
+                        <br>
+                        <div class="form-group">
+                            <div class="col-sm-3">
+                                <label for="Claim" class="control-label">Claim # (if any) :</label>
+                            </div>
+                            <div class="col-sm-5">
+                                <input type="text" class="form-control" id="claim" placeholder="claim number">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-12">
+                                <label for="details" class="control-label">
+                                    <i class="fa fa-building-o"></i>&nbsp;Job Details :</label>
+                            </div>
+                            <div class="col-sm-12">
+                                <textarea class="form-control" id="details" placeholder="[Enter here]"
+                                rows="15">Homeowner states leak in the bathroom</textarea>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <a class="btn btn-primary" href=" ./job_view.html">Schedule Job</a>
+                        <a class="btn btn-primary">Clear</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
 
-    
-    
-    <br> 
-    <div class="page-header" id="header">
-      <h2>Job!</h2>
-    </div>
-  </div>
-</body>
 </html>

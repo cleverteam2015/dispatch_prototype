@@ -83,59 +83,79 @@
                         </div>
                         <div>
                             <div class="col-lg-12">
-                                <br>
-                                <div class="panel panel-default">
-                                    <div class="panel-heading">
-                                        <h4>
-                                            <strong>Open Purchase Orders</strong>
-                                            <a class="btn btn-primary" href="./create_po.html">Create PO</a>
-                                        </h4>
-                                    </div>
-                                    <div class="panel-body">
-                                        <div class="widget widget-table">
-                                            <div class="widget-content">
-                                                <table class="table table-condensed">
-                                                    <thead>
-                                                        <tr>
-                                                            <th>PO#</th>
-                                                            <th>Date</th>
-                                                            <th>Vendor</th>
-                                                            <th>Technician</th>
-                                                            <th>Amount</th>
-                                                        </tr>
-                                                    </thead>
-                                                    <tbody>
-                                                        <tr>
-                                                            <td>123</td>
-                                                            <td>12/21/2015</td>
-                                                            <td>Home Depot</td>
-                                                            <td>John L, Samuel</td>
-                                                            <td>$1,100.11</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>124</td>
-                                                            <td>12/21/2015</td>
-                                                            <td>PWP</td>
-                                                            <td>Jonathan, Samuel, Steve, Juan</td>
-                                                            <td>$50.11</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>125</td>
-                                                            <td>12/21/2015</td>
-                                                            <td>Hemet Pipe Supply</td>
-                                                            <td>Juan</td>
-                                                            <td>$12.11</td>
-                                                        </tr>
-                                                    </tbody>
-                                                </table>
-                                            </div>
+                                <form class="form-horizontal" role="form">
+                                    <div class="form-group">
+                                        <div class="col-sm-2">
+                                            <label for="date" class="control-label">Amount</label>
                                         </div>
+                                        <div class="col-sm-2">
+                                            <input type="text" class="form-control" aria-labe="..." id="amount" placeholder="$0.00">
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <div class="col-sm-2">
+                                            <label for="date" class="control-label">Date Received</label>
+                                        </div>
+                                        <div class="col-sm-2">
+                                                <div class="input-group">
+                                                    <input type="text" class="form-control" placeholder="06/01/2015">
+                                                    <span class="input-group-btn">
+                                                        <button type="button" class="btn btn-primary"><i    class="fa fa-calendar fa-fw"></i></button>
+                                                    </span>
+                                                </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="col-lg-2">
+                                            <label for="type" class="control-label">Payment Type</label>
+                                        </div>
+                                        <div class="col-lg-10">
+
+                                             <label class="radio-inline">
+                                              <input type="radio" name="optradio">Check
+                                            </label>
+                                             <label class="radio-inline">
+                                              <input type="radio" name="optradio">CASH
+                                            </label>
+                                            <label class="radio-inline">
+                                              <input type="radio" name="optradio"><i class="fa fa-cc-amex fa-fw"></i>&nbsp;Amex
+                                            </label>
+                                            <label class="radio-inline">
+                                              <input type="radio" name="optradio"><i class="fa fa-cc-visa fa-fw"></i>&nbsp;Visa
+                                            </label>
+
+                                            <label class="radio-inline">
+                                              <input type="radio" name="optradio"><i class="fa fa-cc-discover fa-fw"></i></i>&nbsp;Discover
+                                            </label>
+                                            <label class="radio-inline">
+                                              <input type="radio" name="optradio"><i class="fa fa-cc-mastercard"></i>&nbsp;Mastercard
+                                            </label>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <div class="col-lg-2">
+                                            <label for="description" class="control-label">Description</label>
+                                        </div>
+                                        <div class="col-lg-5">
+                                            <textarea class="form-control" rows="2" id="Description"></textarea>
+                                        </div>
+                                    </div>            
+
+                                </form>
+
+                            <div class="col-lg-3">
+                                <a class="btn btn-primary" href="./po.html">Save</a>
+                                <a class="btn btn-primary">Clear</a>
+                            </div>
+
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
+                </div-->
             </div>
         </div>
     </body>
